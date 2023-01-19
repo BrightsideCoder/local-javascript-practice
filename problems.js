@@ -145,10 +145,16 @@ function aCounter(word) {
     */
     // Your code here
 
+    let count = 0;
+
     for (let i = 0; i < word.length; i++)
     {
-
+        if (word[i] === "a" || word[i] === "A")
+        {
+            count++;
+        }
     }
+    return count;
 };
 
 module.exports = {
